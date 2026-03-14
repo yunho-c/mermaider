@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ArrowRight, Boxes, CalendarRange, Database, GitBranch, MessagesSquare } from "@lucide/svelte";
+	import { ArrowLeft, ArrowRight, Boxes, CalendarRange, Database, GitBranch, MessagesSquare } from "@lucide/svelte";
 	import MermaidPreview from "$lib/components/mermaid-preview.svelte";
 	import { diagramCategories } from "$lib/mermaid-gallery";
 	import { Badge } from "$lib/components/ui/badge";
@@ -44,33 +44,27 @@
 		<div class="mx-auto flex max-w-7xl flex-col gap-10 px-6 py-16 lg:px-8">
 			<div class="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
 				<div class="space-y-6">
+					<!-- <div class="flex flex-wrap gap-3">
+						<Button variant="outline" href="/">
+							<ArrowLeft />
+							Back home
+						</Button>
+					</div> -->
 					<Badge variant="outline" class="bg-background/80 backdrop-blur">
-						Mermaid Gallery in shadcn-svelte
+						Powered by Mermaider
 					</Badge>
 
 					<div class="space-y-4">
 						<h1 class="max-w-4xl text-4xl font-semibold tracking-tight text-balance sm:text-5xl lg:text-6xl">
-							A curated wall of Mermaid diagram types, rendered live and styled like a proper product.
+							Mermaid Examples
 						</h1>
 						<p class="max-w-3xl text-base leading-7 text-muted-foreground sm:text-lg">
-							Browse flowcharts, sequences, states, data models, and planning views in a single
-							gallery. Each example is organized by type and shown with both the rendered diagram
-							and the source that created it.
+							Browse flowcharts, sequences, states, data models, and planning views in a single gallery.
 						</p>
-					</div>
-
-					<div class="flex flex-wrap gap-3">
-						<Button href="#gallery-tabs">
-							Browse diagrams
-							<ArrowRight />
-						</Button>
-						<Button variant="outline" href="/">
-							Back home
-						</Button>
 					</div>
 				</div>
 
-				<Card class="border-border/60 bg-background/80 backdrop-blur">
+				<!-- <Card class="border-border/60 bg-background/80 backdrop-blur">
 					<CardHeader>
 						<CardTitle>Collection Snapshot</CardTitle>
 						<CardDescription>
@@ -91,7 +85,7 @@
 							<p class="mt-1 text-sm text-muted-foreground">Mermaid output, not images</p>
 						</div>
 					</CardContent>
-				</Card>
+				</Card> -->
 			</div>
 		</div>
 	</section>
