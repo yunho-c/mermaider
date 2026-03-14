@@ -54,6 +54,7 @@
 				</div>
 
 				<div class="flex flex-wrap gap-3">
+					<Button href="/gallery">Open gallery</Button>
 					<Button href="https://www.shadcn-svelte.com/docs" target="_blank" rel="noreferrer">
 						Open shadcn-svelte docs
 					</Button>
